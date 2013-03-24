@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Brian Coleman
+  name: Dave Thomas
   address: MyText
-  email: bcoleman444@gmail.com
+  email: dave@example.org
   pay_type: Check
 
 two:
