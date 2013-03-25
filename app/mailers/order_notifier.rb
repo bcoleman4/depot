@@ -17,7 +17,7 @@ class OrderNotifier < ActionMailer::Base
   #
   #   en.order_notifier.shipped.subject
   #
-  def shipped (order)
+  def shipped
     @order = order
     
     mail to: order.email, subject: 'Pragmatic Store Order Shipped'
