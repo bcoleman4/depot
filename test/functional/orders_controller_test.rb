@@ -11,19 +11,6 @@ class OrdersControllerTest < ActionController::TestCase
     assert_not_nil assigns(:orders)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
-  test "should create order" do
-    assert_difference('Order.count') do
-      post :create, order: { address: @order.address, email: @order.email, name: @order.name, pay_type: @order.pay_type }
-    end
-
-    assert_redirected_to order_path(assigns(:order))
-  end
-
   test "should show order" do
     get :show, id: @order
     assert_response :success
@@ -67,7 +54,7 @@ class OrdersControllerTest < ActionController::TestCase
       post :create, order: @order.attributes
     end
     
-    assert_redirected_to_store_path
+    assert_redirected_to store_path
   end
   
 end
