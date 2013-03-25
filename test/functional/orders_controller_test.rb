@@ -53,7 +53,7 @@ class OrdersControllerTest < ActionController::TestCase
     assert_equal flash[:notice], 'Your cart is empty'
   end
   
-  test "should get new" do
+  test "should get new 2" do
     cart = Cart.create
     session[:cart_id] = cart.id
     LineItem.create(cart: cart, product: products(:ruby))
@@ -62,7 +62,7 @@ class OrdersControllerTest < ActionController::TestCase
     assert_response :success
   end
   
-  test "should create order" do
+  test "should create order 2" do
     assert_difference('Order.count') do
       post :create, order: @order.attributes
     end
