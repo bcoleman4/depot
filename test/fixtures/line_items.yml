@@ -8,9 +8,9 @@ two:
     product_id: 1
     cart_id: 1
   
-three:
-    product_id: 1
-    cart_id: 1   
+ three:
+     product_id: 1
+     cart_id: 1   
 
 four:
     product: ruby
