@@ -1,12 +1,19 @@
 Depot::Application.routes.draw do
-  resources :users
+  get 'admin' => 'administration'
 
+  controller :sessions do
+
+  get 'Login' => :new
+
+  post 'Login' => :create
+  
+  delete 'logout' => :destroy
+
+  resources :users
 
   resources :orders
 
-
   resources :line_items
-
 
   resources :carts
 
