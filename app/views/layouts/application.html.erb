@@ -30,7 +30,11 @@
 			<li><a href="http://www....">Questions</a></li>
 			<li><a href="http://www....">News</a></li>
 			<li><a href="http://www....">Contact</a></li>
+			<li></li>
 		</ul>
+			<% if session[:user_id] == nil %>
+				<%= button_to 'Login', login_path, method: :get %>
+			<% end %>
 		
 		<% if session[:user_id] %>
 			<ul>
