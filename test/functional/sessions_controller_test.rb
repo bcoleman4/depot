@@ -22,15 +22,6 @@ class SessionsControllerTest < ActionController::TestCase
   test "should logout" do
     delete :destroy
     assert_redirected_to store_url
-
-  test "should get create" do
-    get :create
-    assert_response :success
-  end
-
-  test "should get destroy" do
-    get :destroy
-    assert_response :success
   end
 
 end
